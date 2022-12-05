@@ -4,85 +4,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To do Avançado</title>
+  <title>Document</title> 
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Secular+One&display=swap" rel="stylesheet">
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- JS -->
-  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="css/login.css">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/login_page.js" defer></script>
+  
 </head>
 <body>
-  <header class="todo-header">
-    <h1 id="user-name" ></h1>
-    <h2>To do List</h2>
-  </header>
-  <div class="todo-container">
+  <header>
     
-      <form id="todo-form">
-        <p>Adicione a sua tarefa e organize o seu dia-a-dia</p>
-        <div class="form-control">
-          <input type="text" id="todo-input" placeholder="O que você vai fazer?">
-          <button type="submit">
-            <i class="fa-thin fa-plus"></i>
-          </button>
-        </div>
-      </form>
-      <form id="edit-form" class="hide">
-        <p>Edite a sua tarefa: </p>
-        <div class="form-control">
-          <input type="text" name="" id="edit-input">
-          <button type="submit">
-            <i class="fa-solid fa-check-double"></i>
-          </button>
-        </div>
-        <button id="cancel-edit-btn">Cancelar</button>
-      </form>
-      <div id="toolbar">
-        <div id="search">
-          <h4>Pesquisar: </h4>
-          <form>
-            <input type="text" id="search-input" placeholder="Buscar">
-            <button id="erease-button">
-              <i class="fa-solid fa-delete-left"></i>
-            </button>
-          </form>
-        </div>
-        <div id="filter">
-          <h4>Filtrar: </h4>
-          <select id="filter-select">
-            <option value="all">Todos</option>
-            <option value="all">Feitos</option>
-            <option value="all">A fazer</option>
-          </select>
-        </div>
+  </header>
+  <div class="container-externo">
+    <div id="titulo-pagina" >
+      <h1> To do List</h1> 
+    </div> 
+    <form id="entrar">
+      <div class="container" id="container-id"> 
+        <h1 id="titulo-form">Entrar</h1>
+        <input type="text" id="usuario" placeholder="Insira o seu login" class="bordas" value="" required>
+        <input type="password" id="senha" placeholder="Insira a sua senha" class="bordas" value="" required>
+        <input type="submit" name="" id="entrar-conta" class="bordas" value="Entrar">
+        <a href="#">Esqueci a minha senha!</a>
+        <p>Não possui uma conta?</p>
+        <button id="nova-conta" class="bordas" >Criar uma nova conta</button>
       </div>
-    <div id="todo-list">
-      <div class="todo done">
-        <h3>Estou fazendo alguma coisa</h3>
-        <button class="finish-todo">
-          <i class="fa-solid fa-check"></i>
-        </button>
-        <button class="edit-todo">
-          <i class="fa-solid fa-pen"></i>
-        </button>
-        <button class="remove-todo">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
-      <div class="todo">
-        <h3>Estudar JavaScript</h3>
-        <button class="finish-todo">
-          <i class="fa-solid fa-check"></i>
-        </button>
-        <button class="edit-todo">
-          <i class="fa-solid fa-pen"></i>
-        </button>
-        <button class="remove-todo">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
-    </div>
+    </form>
   </div>
 </body>
 </html>

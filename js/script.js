@@ -13,6 +13,22 @@ let user = localStorage.getItem("usuario")
 document.getElementById("user-name").innerHTML = "Bem-vindo(a) " + user + "!";
 
 // Funções
+function searchTask() {
+  let input = document.getElementById('input-search').value
+  input = input.toLowerCase();
+  let componentes = document.getElementsByClassName('todo');
+  let nome = document.querySelectorAll('h3')
+  let aux = componentes.length
+  for (var i = 0; i < componentes.length; i++) { 
+    if (!nome[i].innerText.toLowerCase().includes(input)) {
+      componentes[i].style.display = "none"; 
+      aux--;
+    } else {
+      componentes[i].style.display = "flex";              
+    }
+  }
+ }
+
 //estou esperando um texto, o texto da tarefa
 const saveTodo = (text) => {
   const todo = document.createElement("div");//criando div
@@ -61,6 +77,7 @@ const updateTodo = (text) => {
     }
   })
 }
+
 // Eventos
 todoForm.addEventListener("submit", (e) => {
 

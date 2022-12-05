@@ -22,7 +22,7 @@ html{
   background-color: rgba(248, 248, 255, 0.877);
   display: flex;
   flex-direction: column;
-  width: 30vw;
+  width: 22vw;
   height: 60vh;
   justify-content: space-around;
   background-color: rgb(241, 241, 241);
@@ -33,6 +33,7 @@ html{
 .container a, p {
   text-align: center;
   font-family: 'Secular One', sans-serif;
+  
 }
 
 a{
@@ -81,4 +82,5 @@ a{
   font-family: 'Secular One', sans-serif;
   font-size: 18px;
   color: rgb(92, 92, 92);
+  cursor: pointer;
  }
