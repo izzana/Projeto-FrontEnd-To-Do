@@ -1,13 +1,16 @@
-
 // Seleção de elementos
 const todoForm = document.querySelector("#todo-form")
+console.log(todoForm)
 const todoInput = document.querySelector("#todo-input")
 const todoList = document.querySelector("#todo-list")
 const editForm = document.querySelector("#edit-form")
 const editInput = document.querySelector("#edit-input")
 const cancelEditBtn = document.querySelector("#cancel-edit-btn")
+console.log(cancelEditBtn)
+let oldInputValue;//criando uma variável global
 
-let oldInputValue;//criando uma global
+let user = localStorage.getItem("usuario")
+document.getElementById("user-name").innerHTML = "Bem-vindo(a) " + user + "!";
 
 // Funções
 //estou esperando um texto, o texto da tarefa
